@@ -46,9 +46,22 @@ class Student3:
         self.m1 = m2
         self.m2 = m2
     # BY adding None in argument so that we can pass less or more argument
-    def sum (self,a = None,b=None,c=None):
-        s3 = a+b+c
+    def sum (self,a = None,b=None):
+        s3 = a + b
         return s3
-"""
-- Method Overriding 
-"""
+
+    def mult (self,a = None,b=None):
+        s3 = a*b
+        return s3
+    def sub (self,a = None,b=None):
+        s3 = a - b
+        return s3
+
+
+if __name__ =="__main__":
+    st = Student3(100,200)
+
+
+    print(st.sum(10,5))
+    print(st.mult(10,5))
+    print(st.sub(10,5))
