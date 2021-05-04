@@ -6,8 +6,9 @@ import csv
 import os
 from io import BytesIO
 
-
+os.environ["GOOGLE_APPLICATION_CREDENTIALS"]="/home/jaanhunzai_512/google_key2.json"
 PROJECT_ID = os.getenv("GCP_PROJECT")
+print("PROJECT_ID",PROJECT_ID)
 PREFIX = "gs://"
 
 time = datetime.datetime.now().strftime("%HH%MM%SS")
