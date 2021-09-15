@@ -23,8 +23,8 @@ class Laptop(Computer):
         print("it is running ")
 
 if __name__ =="__main__":
-    #comp = Computer()
-    #comp.process()
+    comp = Computer()
+    comp.process()
 
     lap = Laptop()
     lap.process()

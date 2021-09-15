@@ -4,6 +4,7 @@ class A:
     """
     def __init__(self):
         print("init A")
+
     def feature1(self):
         print("print feature A-1")
 
